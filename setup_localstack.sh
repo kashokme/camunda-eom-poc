@@ -6,7 +6,7 @@ SQS_QUEUE="my-test-queue"
 
 docker run --rm -d -p 4566:4566 -p 4510:4510 localstack/localstack
 
-echo "Esperando a que LocalStack esté listo..."
+echo "Waiting for localstack..."
 sleep 10
 
 export AWS_ENDPOINT_URL=http://localhost:4566
